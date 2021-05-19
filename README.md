@@ -1,4 +1,4 @@
-# Zomato-project-Documentation
+# Zomato-project
  Getting my hands on an official BigData Poject
 1. External Source on boarding to HDFS
   1. Download Zomato restaurant data into zomato\_raw\_files folder
