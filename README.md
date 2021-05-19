@@ -88,9 +88,7 @@ json5 zomato\_20190613.csv
       25. **create\_datetime**
       26. **user\_id**
 
-    1. Data in this hive table should be in ORC format
-    2. Add audit columns &quot;create\_datetime&quot; and &quot;user\_id&quot; in zomato\_summary table
-    3. Derive a column &quot;Rating Colour&quot; based on the rule listed below
+  
 
 | **Rating Text** | **Aggregate Rating** | **m\_rating\_colour** |
 | --- | --- | --- |
@@ -100,10 +98,7 @@ json5 zomato\_20190613.csv
 | Very Good | 4.0-4.4 | Green |
 | Excellent | 4.5-5 | Gold |
 
-    4. Derive a column &quot; **m\_cuisines**&quot; and map the Indian (Andhra,Goan,Hyderabadi,North Indian etc.) cuisines to **&quot;Indian&quot;** and rest of the cuisines to **&quot;World Cuisines&quot;**
-    5. Filter out the restaurants with NULL/BLANCK **Cuisines** values
-    6. Populate &quot;NA&quot; in case of Null/blank values for string columns
-    7. There should be no duplicate record in the summary table
+  
   1. Spark application should be able to perform the following load strategies
 
       1. Manual  should be able to load the data for a Particular **filedate &amp; country\_name**
