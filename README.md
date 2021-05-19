@@ -3,11 +3,10 @@
 1. External Source on boarding to HDFS
   1. Download Zomato restaurant data into zomato\_raw\_files folder
 
-![](RackMultipart20200611-4-rb36j8_html_9d321f5357a6e489.gif)
 
 1. Converting un-structured data into csv data
   1. Copy first three files from **zomato\_raw\_files (Unix)** to **zomato\_etl/source/json** folder
-  2. Write an **application** to convert each json file into csv file with suffix as \*\_filedate.csv and store them in **zomato\_etl/source/csv/** (Unix) folder
+  2. Write an **application** to convert each json file into csv file with suffix as \*\_filedate.csv and store them in **zomato\_etl/source/csv/** (Unix) folder(using Pyspark)
 
 For example:
 
@@ -114,7 +113,7 @@ json5 zomato\_20190613.csv
   2. _ **Check if already another instances is running for the same application** _
     1. _ **Exit and send notification if already an instances is running or the previous application failed** _
   3. _ **User should be able to execute each module separately AND all the modules together** _
-  4. **Module 1 :** To call application that converts json file to csv
+  4. **Module 1 :** To call application that converts json file to csv(pyspark)
     1. Capture Logs in a file
     2. Check execution status
     3. If failed then add a failure entry into log table, send failure notification and exit
